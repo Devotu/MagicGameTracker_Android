@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- App colors -->
+    <color name="Background">#1f1f1f</color>
+    <color name="Content">#FFF</color>
+    <color name="Outline">#000</color>
+    <color name="Accenture">#666</color>
+    <color name="Text">#E0E0E0</color>
+    <!-- Ratings -->
+    <color name="VeryGood">#00F900</color>
+    <color name="Good">#2F9F0F</color>
+    <color name="Average">#F9F900</color>
+    <color name="Bad">#F99900</color>
+    <color name="VeryBad">#F90000</color>
+    <!-- Defaults -->
+    <color name="Neutral">#999</color>
+
+</resources>

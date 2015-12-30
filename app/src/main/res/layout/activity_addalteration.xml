@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvCommentTitle"
+        android:layout_alignParentTop="true"
+        android:text="@string/comment"
+        style="@style/Text.Title" />
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_below="@+id/tvCommentTitle"
+        android:hint="@string/hintComment"
+        style="@style/Text.TextInput.MultiLineInput">
+        <requestFocus android:layout_width="wrap_content" />
+
+    </EditText>
+
+    </RelativeLayout>
+</RelativeLayout>

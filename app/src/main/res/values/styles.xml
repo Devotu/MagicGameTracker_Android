@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="MGT" parent="MGT_Red">
+        <item name="android:windowBackground">@color/Background</item>
+    </style>
+
+    <style name="RootLayout" parent="MGT">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ContentHolder" parent="RootLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="ViewParts" parent="MGT">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="SwipeBar" parent="ViewParts">
+        <item name="android:background">@color/Accenture</item>
+        <item name="android:textColor">@color/Content</item>
+    </style>
+
+    <style name="StandardSize" parent="MGT">
+        <item name="android:layout_width">@dimen/standard_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListView" parent="StandardSize">
+        <item name="android:layout_width">@dimen/full_width</item>
+        <item name="android:dividerHeight">@dimen/margin_half_vertical</item>
+        <item name="android:background">@color/Background</item>
+    </style>
+
+    <style name="ViewPager" parent="ViewParts">
+        <!-- No syles defined -->
+    </style>
+
+    <style name="Content" parent="StandardSize">
+        <item name="android:layout_marginTop">@dimen/space_vertical</item>
+        <item name="android:layout_marginBottom">@dimen/space_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal</item>
+        <item name="android:layout_marginRight">@dimen/margin_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Text" parent="Content">
+        <item name="android:textColor">@color/Text</item>
+    </style>
+
+    <style name="Text.Title" parent="Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/space_horizontal</item>
+        <item name="android:textColor">@color/Content</item>
+    </style>
+
+    <style name="Text.ListItem.Title" parent="Text.Title">
+        <item name="android:layout_marginTop">@dimen/space_vertical</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Text.Compact" parent="Text">
+        <item name="android:layout_margin">@dimen/space_square</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text.Compact.Title" parent="Text.Compact">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">@dimen/margin_half_horizontal</item>
+    </style>
+
+    <style name="Text.TextInput" parent="Text">
+    </style>
+
+    <style name="Text.TextInput.SingleLineInput" parent="Text.TextInput">
+        <item name="android:inputType">textCapWords</item>
+    </style>
+
+    <style name="Text.TextInput.MultiLineInput" parent="Text.TextInput">
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:layout_height">@dimen/component_height_text_multiline</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="Table" parent="Content">
+        <!-- No syles defined -->
+    </style>
+
+    <style name="TableRow" parent="Content">
+        <item name="android:layout_margin">@dimen/space_square</item>
+    </style>
+
+    <style name="ListItem" parent="Content">
+        <item name="android:paddingTop">@dimen/margin_vertical</item>
+        <item name="android:paddingBottom">@dimen/margin_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">@dimen/minimum_listitem</item>
+    </style>
+
+    <style name="DropDown" parent="Content">
+        <!-- No syles defined -->
+    </style>
+
+    <style name="Checkbox" parent="Content">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="ManaSymbol" parent="Content">
+        <item name="android:layout_height">@dimen/component_height_manasymbol</item>
+        <item name="android:layout_width">@dimen/component_width_manasymbol</item>
+        <item name="android:layout_margin">@dimen/space_square</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ManaSymbol.Checkbox" parent="ManaSymbol">
+        <!-- No syles defined -->
+    </style>
+
+    <style name="ManaSymbol.Indicator" parent="ManaSymbol">
+        <!-- No syles defined -->
+    </style>
+
+    <style name="RatingBar" parent="Content">
+        <item name="android:max">5</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="RatingBar.Indicator" parent="RatingBar">
+        <item name="android:stepSize">0.5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="Button" parent="Content">
+        <item name="android:layout_marginTop">@dimen/margin_vertical</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Graph" parent="Content">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">@dimen/component_height_graph</item>
+    </style>
+
+    <style name="Banner" parent="Content">
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="Banner.Bottom" parent="Banner">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style parent="@android:style/Widget.Holo.ActionBar" name="ActionBar">
+
+        <item name="android:background">@drawable/mgt_red_ab_transparent</item>
+
+    </style>
+
+</resources>

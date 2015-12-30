@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <Button
+        android:id="@+id/bExportDatabase"
+        android:text="@string/export_database"
+        android:layout_alignParentTop="true"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/bImportDatabase"
+        android:text="@string/import_database"
+        android:layout_below="@+id/bExportDatabase"
+        style="@style/Button"/>
+
+        </RelativeLayout>
+</RelativeLayout>

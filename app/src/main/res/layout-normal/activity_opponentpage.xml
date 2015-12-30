@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayout"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvOpponentNameTitle"
+        android:text="@string/name"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvOpponentName"
+        android:layout_below="@+id/tvOpponentNameTitle"
+        android:text="@string/error"
+        style="@style/Content"/>
+
+        <fragment
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:name="se.devotu.magicgametracker.gui.PlayerStatisticsFragment"
+            android:id="@+id/frStatisticsFragment"
+            android:layout_below="@+id/tvOpponentName"
+            tools:layout="@layout/fragment_playerstatistics" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        style="@style/Banner.Bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/opponent_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+</RelativeLayout>

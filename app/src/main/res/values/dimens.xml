@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default margins -->
+    <dimen name="margin_square">10dp</dimen>
+    <dimen name="margin_horizontal">10dp</dimen>
+    <dimen name="margin_vertical">10dp</dimen>
+    <dimen name="margin_half_square">5dp</dimen>
+    <dimen name="margin_half_horizontal">5dp</dimen>
+    <dimen name="margin_half_vertical">5dp</dimen>
+    <dimen name="space_square">1dp</dimen>
+    <dimen name="space_horizontal">1dp</dimen>
+    <dimen name="space_vertical">1dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <!-- Standard component measures -->
+    <dimen name="standard_width">320dp</dimen>
+    <dimen name="full_width">320dp</dimen>
+    <dimen name="component_height_text_multiline">100dp</dimen>
+    <dimen name="component_height_text_singleline">40dp</dimen>
+    <dimen name="component_height_manasymbol">52dp</dimen>
+    <dimen name="component_width_manasymbol">50dp</dimen>
+    <dimen name="minimum_listitem">40dp</dimen>
+    <dimen name="adview_height">60dp</dimen>
+    <!-- Graph component measures -->
+    <dimen name="component_height_graph">120dp</dimen>
+    <dimen name="component_width_graph">320dp</dimen>
+    <dimen name="component_display_height_graph">100dp</dimen>
+    <dimen name="component_display_width_graph">300dp</dimen>
+    <dimen name="component_description_height_graph">20dp</dimen>
+    <dimen name="component_description_width_graph">20dp</dimen>
+    <dimen name="component_text_graph">12dp</dimen>
+    <!-- Adjustment coeficient -->
+    <dimen name="adjustment_coeficient">1dp</dimen>
+    <!-- App elements -->
+    <dimen name="outline_width">1dp</dimen>
+
+</resources>

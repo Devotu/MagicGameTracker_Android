@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItem"
+    android:id="@+id/llBackground"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:text="@string/format"
+            style="@style/Text.Title"
+            android:id="@+id/tvFormatTitle" />
+
+        <Spinner
+            android:id="@+id/ddFormat"
+            android:layout_below="@+id/tvFormatTitle"
+            style="@style/DropDown" />
+
+    </RelativeLayout>
+
+</LinearLayout>

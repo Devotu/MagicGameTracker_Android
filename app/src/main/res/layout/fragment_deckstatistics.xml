@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvStatisticsTitle"
+        android:layout_alignParentTop="true"
+        android:text="@string/gamestatistics"
+        style="@style/Text.Title" />
+
+    <TableLayout
+        android:id="@+id/tbDeckStatTable"
+        android:layout_below="@+id/tvStatisticsTitle"
+        style="@style/Table">
+
+        <TableRow
+            android:id="@+id/rHeaderRow"
+            style="@style/TableRow">
+
+            <TextView
+                android:id="@+id/tvLayoutBlocker"
+                android:text="@string/space"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvWinTitle"
+                android:text="@string/wins"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvLoseTitle"
+                android:text="@string/losses"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvStatWinTitle"
+                android:text="@string/winpc"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rCurrentRow"
+            style="@style/TableRow">
+
+            <TextView
+                android:id="@+id/tvCurrentTitle"
+                android:text="@string/current"
+                style="@style/Text.Compact"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvCurrentWin"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvCurrentLose"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvCurrentStatWin"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rTotalRow"
+            style="@style/TableRow">
+
+            <TextView
+                android:id="@+id/tvTotalTitle"
+                android:text="@string/total"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvTotalWin"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvTotalLose"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvTotalStatWin"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/rCommonRow"
+            style="@style/TableRow">
+
+            <ImageView
+                android:id="@+id/imgCommonWin"
+                android:layout_column="1"
+                style="@style/ManaSymbol.Indicator"/>
+
+            <ImageView
+                android:id="@+id/imgCommonLoss"
+                style="@style/ManaSymbol.Indicator" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvPerformanceRatingTitle"
+        android:layout_below="@+id/tbDeckStatTable"
+        android:text="@string/theme"
+        style="@style/Text.Title"/>
+
+    <RatingBar
+        android:id="@+id/rbarDeckPerformanceRating"
+        android:layout_below="@+id/tvPerformanceRatingTitle"
+        style="@style/RatingBar.Indicator"/>
+
+    </RelativeLayout>
+</RelativeLayout>

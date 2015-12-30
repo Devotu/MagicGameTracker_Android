@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvHelp1"
+        android:layout_alignParentTop="true"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvHelp2"
+        android:layout_below="@+id/tvHelp1"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvHelp3"
+        android:layout_below="@+id/tvHelp2"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvHelp4"
+        android:layout_below="@+id/tvHelp3"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvHelp5"
+        android:layout_below="@+id/tvHelp4"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    </RelativeLayout>
+</RelativeLayout>

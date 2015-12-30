@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ListItem"
+    android:id="@+id/llBackground"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:text="@string/error"
+        android:id="@+id/tvComment"
+        style="@style/Text"/>
+</LinearLayout>

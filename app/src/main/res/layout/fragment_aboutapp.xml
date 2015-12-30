@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <TextView
+        android:id="@+id/tvVersionNumber"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/error"
+        style="@style/Text.Compact"
+        android:layout_width="50dp"/>
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/tvVersionNumber"
+        android:text="@string/version"
+        style="@style/Text.Compact.Title"
+        android:layout_width="70dp"
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/tvAbout1"
+        android:layout_below="@+id/tvVersion"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvAbout2"
+        android:layout_below="@+id/tvAbout1"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvAbout3"
+        android:layout_below="@+id/tvAbout2"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvAbout4"
+        android:layout_below="@+id/tvAbout3"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvAbout5"
+        android:layout_below="@+id/tvAbout4"
+        android:text="@string/space"
+        style="@style/Text"/>
+
+
+    <TextView
+        android:id="@+id/tvEmailSubjectTitle"
+        android:layout_above="@+id/etEmailSubject"
+        android:text="@string/subject"
+        style="@style/Text.Title"/>
+
+    <EditText
+        android:id="@+id/etEmailSubject"
+        android:layout_above="@+id/tvEmailBodyTitle"
+        style="@style/Text.TextInput.SingleLineInput"/>
+
+    <TextView
+        android:id="@+id/tvEmailBodyTitle"
+        android:layout_above="@+id/etEmailBody"
+        android:text="@string/body"
+        style="@style/Text.Title" />
+
+    <EditText
+        android:id="@+id/etEmailBody"
+        android:layout_above="@+id/bEmail"
+        style="@style/Text.TextInput.MultiLineInput"/>
+
+    <Button
+        android:id="@+id/bEmail"
+        android:text="@string/email"
+        android:layout_alignParentBottom="true"
+        style="@style/Button"/>
+</RelativeLayout>

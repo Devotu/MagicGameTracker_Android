@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <Button
+        android:id="@+id/bToDecks"
+        android:text="@string/bToDecks"
+        android:layout_alignParentTop="true"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/bToNewDeck"
+        android:text="@string/bToNewDeck"
+        android:layout_below="@+id/bToDecks"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/bToOpponents"
+        android:text="@string/bToOpponentPage"
+        android:layout_below="@+id/bToNewDeck"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/bToPlayerPage"
+        android:text="@string/bToPlayerPage"
+        android:layout_below="@+id/bToOpponents"
+        style="@style/Button"/>
+
+        </RelativeLayout>
+</RelativeLayout>

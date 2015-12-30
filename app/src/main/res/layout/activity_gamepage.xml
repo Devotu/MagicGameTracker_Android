@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvGameResultTitle"
+        android:text="@string/result"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvGameResult"
+        android:layout_below="@+id/tvGameResultTitle"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvGameOpponentTitle"
+        android:layout_below="@+id/tvGameResult"
+        android:text="@string/opponent"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvGameOpponent"
+        android:layout_below="@+id/tvGameOpponentTitle"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvGameColorsTitle"
+        android:layout_below="@+id/tvGameOpponent"
+        android:text="@string/colors"
+        style="@style/Text.Title" />
+
+    <TableLayout
+        android:id="@+id/tbGameManaColors"
+        android:layout_below="@+id/tvGameColorsTitle"
+        style="@style/Table">
+
+        <TableRow
+            android:id="@+id/trColorsOne"
+            style="@style/TableRow" >
+
+            <ImageView
+                android:id="@+id/imgBlack"
+                android:layout_column="0"
+                android:src="@drawable/black_mana_big_bw"
+                style="@style/ManaSymbol.Indicator"/>
+
+            <ImageView
+                android:id="@+id/imgRed"
+                android:layout_column="2"
+                android:src="@drawable/red_mana_big_bw"
+                style="@style/ManaSymbol.Indicator"/>
+
+            <ImageView
+                android:id="@+id/imgGreen"
+                android:layout_column="4"
+                android:src="@drawable/green_mana_big_bw"
+                style="@style/ManaSymbol.Indicator"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trColorsTwo"
+            style="@style/TableRow" >
+
+            <ImageView
+                android:id="@+id/imgWhite"
+                android:layout_column="1"
+                android:src="@drawable/white_mana_big_bw"
+                style="@style/ManaSymbol.Indicator"/>
+
+            <ImageView
+                android:id="@+id/imgBlue"
+                android:layout_column="3"
+                android:src="@drawable/blue_mana_big_bw"
+                style="@style/ManaSymbol.Indicator"/>
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvGamePerformanceRatingTitle"
+        android:layout_below="@+id/tbGameManaColors"
+        android:text="@string/performanceRating"
+        style="@style/Text.Title" />
+
+    <RatingBar
+        android:id="@+id/rbarGamePerformanceRating"
+        android:layout_below="@+id/tvGamePerformanceRatingTitle"
+        style="@style/RatingBar.Indicator"/>
+
+    <TextView
+        android:id="@+id/tvCommentTitle"
+        android:layout_below="@+id/rbarGamePerformanceRating"
+        android:text="@string/comment"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_below="@+id/tvCommentTitle"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        style="@style/Banner.Bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/game_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

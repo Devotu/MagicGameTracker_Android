@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Generated with http://android-holo-colors.com -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <style name="MGT_Red" parent="android:Theme.Holo">
+
+    <item name="android:editTextBackground">@drawable/mgt_red_edit_text_holo_dark</item>
+
+    <item name="android:textColorHighlight">#99cc0000</item>
+    <item name="android:textSelectHandleLeft">@drawable/mgt_red_text_select_handle_left</item>
+    <item name="android:textSelectHandleRight">@drawable/mgt_red_text_select_handle_right</item>
+    <item name="android:textSelectHandle">@drawable/mgt_red_text_select_handle_middle</item>
+
+    <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewMGT_Red</item>
+
+    <item name="android:listChoiceIndicatorSingle">@drawable/mgt_red_btn_radio_holo_dark</item>
+
+    <item name="android:buttonStyle">@style/ButtonMGT_Red</item>
+
+    <item name="android:imageButtonStyle">@style/ImageButtonMGT_Red</item>
+
+    <item name="android:dropDownSpinnerStyle">@style/SpinnerMGT_Red</item>
+
+    <item name="android:ratingBarStyle">@style/RatingBarMGT_Red</item>
+
+      <item name="android:actionBarStyle">@style/ActionBar</item>
+
+  </style>
+
+</resources>

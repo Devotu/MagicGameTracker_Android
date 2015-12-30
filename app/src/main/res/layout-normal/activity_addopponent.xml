@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvOpponentNameTitle"
+        android:text="@string/name"
+        style="@style/Text.Title" />
+
+    <EditText
+        android:id="@+id/etOpponentName"
+        android:layout_below="@+id/tvOpponentNameTitle"
+        style="@style/Text.TextInput.SingleLineInput"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvChooseOpponentTitle"
+        android:layout_alignParentTop="true"
+        android:text="@string/opponent"
+        style="@style/Text.Title" />
+
+    <Spinner
+        android:id="@+id/ddOpponent"
+        android:layout_below="@+id/tvChooseOpponentTitle"
+        style="@style/DropDown"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvColorsTitle"
+        android:layout_below="@+id/ddOpponent"
+        android:text="@string/colors"
+        style="@style/Text.Title" />
+
+    <TableLayout
+        android:id="@+id/tbManaColors"
+        android:layout_below="@+id/tvColorsTitle"
+        android:layout_centerHorizontal="true"
+        style="@style/Table">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            style="@style/TableRow">
+
+            <CheckBox
+                android:id="@+id/cbBlack"
+                android:layout_column="0"
+                android:background="@drawable/cbbigblack"
+                android:button="@null"
+                style="@style/ManaSymbol.Checkbox" />
+
+            <CheckBox
+                android:id="@+id/cbRed"
+                android:layout_column="2"
+                android:background="@drawable/cbbigred"
+                android:button="@null"
+                style="@style/ManaSymbol.Checkbox" />
+
+            <CheckBox
+                android:id="@+id/cbGreen"
+                android:layout_column="4"
+                android:background="@drawable/cbbiggreen"
+                android:button="@null"
+                style="@style/ManaSymbol.Checkbox" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            style="@style/TableRow">
+
+            <CheckBox
+                android:id="@+id/cbWhite"
+                android:layout_column="1"
+                android:background="@drawable/cbbigwhite"
+                android:button="@null"
+                style="@style/ManaSymbol.Checkbox" />
+
+            <CheckBox
+                android:id="@+id/cbBlue"
+                android:layout_column="3"
+                android:background="@drawable/cbbigblue"
+                android:button="@null"
+                style="@style/ManaSymbol.Checkbox" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/tvCommentTitle"
+        android:layout_below="@+id/tbManaColors"
+        android:text="@string/comment"
+        style="@style/Text.Title" />
+
+    <EditText
+        android:id="@+id/etComment"
+        android:layout_below="@+id/tvCommentTitle"
+        android:hint="@string/comment"
+        style="@style/Text.TextInput.MultiLineInput"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true">
+        <requestFocus android:layout_width="wrap_content" />
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tvPerformanceRatingTitle"
+        android:layout_below="@+id/etComment"
+        android:text="@string/performanceRating"
+        style="@style/Text.Title"/>
+
+    <RatingBar
+        android:id="@+id/rbarGamePerformanceRating"
+        android:layout_below="@+id/tvPerformanceRatingTitle"
+        style="@style/RatingBar"
+        android:rating="2.5"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvResultTitle"
+        android:layout_below="@+id/rbarGamePerformanceRating"
+        android:text="@string/result"
+        style="@style/Text.Title"
+        android:layout_width="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgWinLoss"
+        android:layout_below="@+id/tvResultTitle"
+        android:orientation="horizontal"
+        style="@style/Content"
+        android:layout_width="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbLoss"
+            android:text="@string/loss"
+            style="@style/Checkbox" />
+
+        <RadioButton
+            android:id="@+id/rbWin"
+            android:text="@string/win"
+            style="@style/Checkbox" />
+
+        </RadioGroup>
+
+        </RelativeLayout>
+</RelativeLayout>

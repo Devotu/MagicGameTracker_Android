@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvOpponentNameTitle"
+        android:text="@string/name"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvOpponentName"
+        android:layout_below="@+id/tvOpponentNameTitle"
+        android:text="@string/error"
+        style="@style/Content"/>
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        style="@style/Banner.Bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/opponent_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+</RelativeLayout>

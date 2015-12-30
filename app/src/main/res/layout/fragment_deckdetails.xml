@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvDeckName"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/error"
+        style="@style/Text.Title"/>
+
+    <TextView
+        android:id="@+id/tvActiveTitle"
+        android:layout_below="@+id/tvDeckName"
+        android:text="@string/active"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvActive"
+        android:text="@string/error"
+        android:layout_below="@+id/tvActiveTitle"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvFormatTitle"
+        android:layout_below="@+id/tvActive"
+        android:text="@string/format"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvFormat"
+        android:text="@string/error"
+        android:layout_below="@+id/tvFormatTitle"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvThemeTitle"
+        android:layout_below="@+id/tvFormat"
+        android:text="@string/theme"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvTheme"
+        android:text="@string/error"
+        android:layout_below="@+id/tvThemeTitle"
+        style="@style/Content"/>
+
+    </RelativeLayout>
+</RelativeLayout>

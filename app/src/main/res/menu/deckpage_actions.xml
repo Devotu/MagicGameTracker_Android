@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_addgame"
+        android:title="Add Game"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always"/>
+    <item android:id="@+id/action_addalteration"
+        android:title="Add Alteration"
+        android:icon="@drawable/ic_action_edit"
+        android:showAsAction="always"/>
+    <item android:id="@+id/action_toggleactive"
+        android:title="Toggle Active"
+        android:icon="@drawable/ic_action_make_available_offline"
+        android:showAsAction="always"/>
+    <item android:id="@+id/action_delete"
+        android:title="Delete"
+        android:icon="@drawable/ic_action_discard"
+        android:showAsAction="collapseActionView"/>
+    <item android:id="@+id/action_help"
+        android:title="Help"
+        android:icon="@drawable/ic_action_help"
+        android:showAsAction="always"/>
+</menu>

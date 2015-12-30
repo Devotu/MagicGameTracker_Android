@@ -1,0 +1,4 @@
+4.0.1.3 
+Antalet skrivs ut på färger i diagram
+4.0.2.0 
+Lekar kan sorteras på format

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvActiveColors"
+        android:layout_alignParentTop="true"
+        android:text="@string/timesfoundinactivedecks"
+        style="@style/Text.Title" />
+
+    <RelativeLayout
+        style="@style/Graph"
+        android:layout_below="@+id/tvActiveColors"
+        android:id="@+id/grActiveColorsContainer">
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvTotalColors"
+        android:layout_below="@+id/grActiveColorsContainer"
+        android:text="@string/timesfoundinalldeck"
+        style="@style/Text.Title" />
+
+    <RelativeLayout
+        style="@style/Graph"
+        android:layout_below="@+id/tvTotalColors"
+        android:id="@+id/grTotalColorsContainer">
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

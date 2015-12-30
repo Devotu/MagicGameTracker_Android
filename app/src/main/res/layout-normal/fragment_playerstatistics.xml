@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvTotalColors"
+        android:layout_alignParentTop="true"
+        android:text="@string/winrate"
+        style="@style/Text.Title" />
+
+    <TableLayout
+        android:id="@+id/tbPlayedGamesStats"
+        android:layout_below="@+id/tvTotalColors"
+        style="@style/Table">
+
+        <TableRow
+            android:id="@+id/FirstRow"
+            style="@style/TableRow">
+
+            <TextView
+                android:id="@+id/tvTotalTitle"
+                android:text="@string/total"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvWinTitle"
+                android:text="@string/wins"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvLoseTitle"
+                android:text="@string/losses"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvStatWinTitle"
+                android:text="@string/winpc"
+                style="@style/Text.Compact.Title"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/SecondRow"
+            style="@style/TableRow" >
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvWin"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvLose"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tvStatWin"
+                android:text="@string/error"
+                style="@style/Text.Compact"
+                android:layout_weight="1" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        style="@style/Graph"
+        android:layout_below="@+id/tbPlayedGamesStats"
+        android:id="@+id/grTotalColorsContainer">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvActiveColors"
+        android:layout_below="@+id/grTotalColorsContainer"
+        android:text="@string/colorsplayed"
+        style="@style/Text.Title" />
+
+    <RelativeLayout
+        style="@style/Graph"
+         android:layout_below="@+id/tvActiveColors"
+        android:id="@+id/grActiveColorsContainer">
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

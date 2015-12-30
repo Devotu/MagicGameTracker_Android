@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+    <TextView
+        android:id="@+id/tvAlterationDateTitle"
+        android:text="@string/date"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvAlterationDate"
+        android:layout_below="@+id/tvAlterationDateTitle"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+    <TextView
+        android:id="@+id/tvCommentTitle"
+        android:layout_below="@+id/tvAlterationDate"
+        android:text="@string/comment"
+        style="@style/Text.Title" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_below="@+id/tvCommentTitle"
+        android:text="@string/error"
+        style="@style/Text"/>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        style="@style/Banner.Bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/alteration_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+</RelativeLayout>
