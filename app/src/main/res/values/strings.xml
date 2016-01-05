@@ -4,10 +4,10 @@
     <string name="app_name">Magic Game Tracker</string>
     <string name="version">version: </string>
     <string name="action_settings">Settings</string>
-    <string name="bToDecks">Decklist</string>
+    <string name="bToDecks">Decks</string>
     <string name="bToNewDeck">Create New Deck</string>
     <string name="bToOpponentPage">Opponents</string>
-    <string name="bToPlayerPage">Player Statistics</string>
+    <string name="bToPlayerPage">Statistics</string>
     <string name="bToAbout">About</string>
     <string name="hint_Name">Name</string>
     <string name="hint_Theme">Theme</string>

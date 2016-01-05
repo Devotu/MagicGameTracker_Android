@@ -57,7 +57,7 @@ public class DeckSwipePage extends FragmentActivity{
         final DeckManager dm = new DeckManager(DeckSwipePage.this);
         switch (item.getItemId()) {
             case R.id.action_addgame:
-                intent = new Intent(DeckSwipePage.this, AddGame.class);
+                intent = new Intent(DeckSwipePage.this, AddGameSwipePage.class);
                 intent.putExtra("Deck_ID", deckID);
                 startActivity(intent);
                 return true;

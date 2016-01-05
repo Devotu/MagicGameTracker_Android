@@ -35,9 +35,16 @@
         <activity
             android:name="se.devotu.magicgametracker.gui.OpponentList">
         </activity>
+        <!-- Version 4.0
         <activity
             android:name="se.devotu.magicgametracker.gui.AddGame">
+        </activity>-->
+
+        <!-- Version 4.0 -->
+        <activity
+            android:name="se.devotu.magicgametracker.gui.AddGameSwipePage">
         </activity>
+
         <!-- Version 3.0
         <activity
             android:name=".gui.DeckPage">
