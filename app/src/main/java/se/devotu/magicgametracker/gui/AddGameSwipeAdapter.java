@@ -23,7 +23,7 @@ public class AddGameSwipeAdapter extends FragmentPagerAdapter{
 
         switch (position){
             case 0: return new AddGameFragment();
-            case 1: return new DecklistAllFragment();
+            case 1: return new LifeTrackerCollectionFragment();
             default: break;
         }
         return null;

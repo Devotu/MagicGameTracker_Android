@@ -19,6 +19,8 @@
     <dimen name="component_width_manasymbol">50dp</dimen>
     <dimen name="minimum_listitem">40dp</dimen>
     <dimen name="adview_height">60dp</dimen>
+    <dimen name="component_height_squarebutton">50dp</dimen>
+    <dimen name="component_width_squarebutton">50dp</dimen>
     <!-- Graph component measures -->
     <dimen name="component_height_graph">120dp</dimen>
     <dimen name="component_width_graph">320dp</dimen>

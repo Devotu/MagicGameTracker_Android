@@ -83,7 +83,7 @@
         android:hint="@string/comment"
         style="@style/Text.TextInput.MultiLineInput"
         android:layout_height="50dp">
-        <requestFocus android:layout_width="wrap_content" />
+        <!-- Version 4.0 <requestFocus android:layout_width="wrap_content" />-->
 
     </EditText>
 

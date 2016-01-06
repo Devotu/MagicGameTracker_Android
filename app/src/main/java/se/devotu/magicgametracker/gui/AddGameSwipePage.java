@@ -33,20 +33,20 @@ public class AddGameSwipePage extends FragmentActivity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.add_actions, menu);
+        inflater.inflate(R.menu.save_actions, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
-        switch (item.getItemId()) {
+        switch (item.getItemId()) {/*
             case R.id.action_add:
                 intent = new Intent(AddGameSwipePage.this, NewDeck.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                AddGameSwipePage.this.finish();
-                return true;
+            startActivity(intent);
+            AddGameSwipePage.this.finish();
+            return true;*/
             case R.id.action_help:
                 intent = new Intent(AddGameSwipePage.this, AboutSwipePage.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);

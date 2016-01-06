@@ -97,6 +97,10 @@
     <string name="winratehistory">Winrate history</string>
     <string name="timesfoundinalldeck">Times found in all decks</string>
     <string name="timesfoundinactivedecks">Times found in active decks</string>
+    <string name="plus1">+1</string>
+    <string name="minus1">-1</string>
+    <string name="plus5">+5</string>
+    <string name="minus5">-5</string>
 
     <!--Sentences-->
     <string name="importwarning">This action will delete your current database, are you sure you want to proceed?</string>

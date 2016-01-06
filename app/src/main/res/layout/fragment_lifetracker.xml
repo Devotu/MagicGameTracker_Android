@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+        <RelativeLayout
+            style="@style/Content"
+            android:layout_below="@+id/adView"
+            android:id="@+id/relativeLayout">
+
+            <ListView
+                style="@style/ListView"
+                android:id="@+id/lv"
+                android:layout_alignParentLeft="true"></ListView>
+
+            <TableLayout
+                style="@style/Table"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true">
+                <TableRow style="@style/TableRow">
+                    <Button style="@style/Button"
+                        android:id="@+id/bAdd1"
+                        android:layout_width="@dimen/component_width_squarebutton"
+                        android:layout_height="@dimen/component_height_squarebutton"
+                        android:text="@string/plus1"/>
+                    <Button style="@style/Button"
+                        android:id="@+id/bAdd5"
+                        android:layout_width="@dimen/component_width_squarebutton"
+                        android:layout_height="@dimen/component_height_squarebutton"
+                        android:text="@string/plus5"/>
+                </TableRow>
+                <TableRow style="@style/TableRow">
+                    <Button style="@style/Button"
+                        android:id="@+id/bReduce1"
+                        android:layout_width="@dimen/component_width_squarebutton"
+                        android:layout_height="@dimen/component_height_squarebutton"
+                        android:text="@string/minus1"/>
+                    <Button style="@style/Button"
+                        android:id="@+id/bReduce5"
+                        android:layout_width="@dimen/component_width_squarebutton"
+                        android:layout_height="@dimen/component_height_squarebutton"
+                        android:text="@string/minus5"/>
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
