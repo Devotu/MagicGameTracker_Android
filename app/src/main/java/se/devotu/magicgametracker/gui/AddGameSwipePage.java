@@ -40,13 +40,13 @@ public class AddGameSwipePage extends FragmentActivity{
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
-        switch (item.getItemId()) {/*
-            case R.id.action_add:
-                intent = new Intent(AddGameSwipePage.this, NewDeck.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-            AddGameSwipePage.this.finish();
-            return true;*/
+        switch (item.getItemId()) {
+            case R.id.action_save:
+                this.revertToAddGame();
+                return true;
+            case R.id.action_cancel:
+                navigateBack();
+                return true;
             case R.id.action_help:
                 intent = new Intent(AddGameSwipePage.this, AboutSwipePage.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -57,5 +57,16 @@ public class AddGameSwipePage extends FragmentActivity{
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    private void navigateBack() {
+        Intent intent = new Intent(AddGameSwipePage.this, DeckSwipePage.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        AddGameSwipePage.this.finish();
+    }
+
+    protected void revertToAddGame(){
+        addGamePager.setCurrentItem(0,true);
     }
 }

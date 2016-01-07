@@ -88,7 +88,6 @@
         style="@style/Text.TextInput.MultiLineInput"
         android:layout_height="100dp"
         android:layout_centerHorizontal="true">
-        <requestFocus android:layout_width="wrap_content" />
 
     </EditText>
 

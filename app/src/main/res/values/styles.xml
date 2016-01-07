@@ -102,6 +102,10 @@
         <item name="android:minHeight">@dimen/minimum_listitem</item>
     </style>
 
+    <style name="SlimListItem" parent="Content">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
     <style name="DropDown" parent="Content">
         <!-- No syles defined -->
     </style>

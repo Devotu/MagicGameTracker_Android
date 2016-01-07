@@ -83,7 +83,6 @@
         android:hint="Mindre än 720dp!"
         style="@style/Text.TextInput.MultiLineInput"
         android:layout_height="50dp">
-        <requestFocus android:layout_width="wrap_content" />
 
     </EditText>
 

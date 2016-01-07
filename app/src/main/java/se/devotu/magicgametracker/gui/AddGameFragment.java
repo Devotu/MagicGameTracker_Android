@@ -101,9 +101,6 @@ public class AddGameFragment extends Fragment {
                     Toast.makeText(getActivity(), msg, Toast.LENGTH_SHORT).show();
                 }
                 return true;
-            case R.id.action_cancel:
-                navigateBack();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

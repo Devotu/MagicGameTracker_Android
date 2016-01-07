@@ -8,16 +8,18 @@
 
         <RelativeLayout
             style="@style/Content"
-            android:layout_below="@+id/adView"
             android:id="@+id/relativeLayout">
 
             <ListView
-                style="@style/ListView"
-                android:id="@+id/lv"
-                android:layout_alignParentLeft="true"></ListView>
+                android:id="@+id/lvLifelog"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/tbLifeButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></ListView>
 
             <TableLayout
                 style="@style/Table"
+                android:id="@+id/tbLifeButtons"
                 android:layout_width="wrap_content"
                 android:layout_alignParentRight="true">
                 <TableRow style="@style/TableRow">
