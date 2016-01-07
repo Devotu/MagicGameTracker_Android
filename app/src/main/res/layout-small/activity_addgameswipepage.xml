@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vpAddGamePager"
+    style="@style/ViewPager">
+
+    <android.support.v4.view.PagerTabStrip
+        android:id="@+id/tsAddGamePager"
+        style="@style/SwipeBar"/>
+
+</android.support.v4.view.ViewPager>

@@ -4,10 +4,10 @@
     <string name="app_name">Magic Game Tracker</string>
     <string name="version">version: </string>
     <string name="action_settings">Settings</string>
-    <string name="bToDecks">Decklist</string>
+    <string name="bToDecks">Decks</string>
     <string name="bToNewDeck">Create New Deck</string>
     <string name="bToOpponentPage">Opponents</string>
-    <string name="bToPlayerPage">Player Statistics</string>
+    <string name="bToPlayerPage">Statistics</string>
     <string name="bToAbout">About</string>
     <string name="hint_Name">Name</string>
     <string name="hint_Theme">Theme</string>
@@ -97,6 +97,10 @@
     <string name="winratehistory">Winrate history</string>
     <string name="timesfoundinalldeck">Times found in all decks</string>
     <string name="timesfoundinactivedecks">Times found in active decks</string>
+    <string name="plus1">+1</string>
+    <string name="minus1">-1</string>
+    <string name="plus5">+5</string>
+    <string name="minus5">-5</string>
 
     <!--Sentences-->
     <string name="importwarning">This action will delete your current database, are you sure you want to proceed?</string>

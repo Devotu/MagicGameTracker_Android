@@ -31,6 +31,7 @@ public class MainMenu extends Activity {
             }
         });
 
+        /* Version 4.0
         bToNewDeck = (Button)findViewById(R.id.bToNewDeck);
         bToNewDeck.setOnClickListener(new OnClickListener() {
             public void onClick(View v)
@@ -39,6 +40,7 @@ public class MainMenu extends Activity {
                 startActivity(intent);
             }
         });
+        */
 
         bToOppenentView = (Button)findViewById(R.id.bToOpponents);
         bToOppenentView.setOnClickListener(new OnClickListener() {

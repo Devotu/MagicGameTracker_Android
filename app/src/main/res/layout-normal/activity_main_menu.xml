@@ -10,16 +10,16 @@
         android:layout_alignParentTop="true"
         style="@style/Button"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/bToNewDeck"
         android:text="@string/bToNewDeck"
         android:layout_below="@+id/bToDecks"
-        style="@style/Button"/>
+        style="@style/Button"/>-->
 
     <Button
         android:id="@+id/bToPlayerPage"
         android:text="@string/bToPlayerPage"
-        android:layout_below="@+id/bToNewDeck"
+        android:layout_below="@+id/bToDecks"
         style="@style/Button"/>
 
     <Button

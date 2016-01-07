@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+        <RelativeLayout
+            style="@style/Content"
+            android:layout_above="@+id/adView"
+            android:rotation="180.0">
+            <fragment
+                class="se.devotu.magicgametracker.gui.LifeTrackerFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_lifetracker">
+            </fragment>
+        </RelativeLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            style="@style/Banner.Center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/alteration_ad_unit_id">
+        </com.google.android.gms.ads.AdView>
+
+        <RelativeLayout
+            style="@style/Content"
+            android:layout_below="@+id/adView">
+            <fragment
+                class="se.devotu.magicgametracker.gui.LifeTrackerFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout="@layout/fragment_lifetracker">
+            </fragment>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
