@@ -67,7 +67,8 @@ public class AboutAppFragment extends Fragment {
                     bEmail.setText(getString(R.string.send));
                 } else {
                     bEmail.setText(getString(R.string.email));
-                    sendEmail(etSubject.getText().toString(), etBody.getText().toString());
+                    sendEmail(etSubject.getText().toString(), etBody.getText().toString() +
+                            "\nI'm using Magic Game Tracker for Android version " + BuildConfig.VERSION_NAME);
                     etSubject.setText("");
                     etBody.setText("");
                 }

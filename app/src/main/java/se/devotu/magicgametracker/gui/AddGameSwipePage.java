@@ -41,9 +41,6 @@ public class AddGameSwipePage extends FragmentActivity{
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
         switch (item.getItemId()) {
-            case R.id.action_save:
-                this.revertToAddGame();
-                return true;
             case R.id.action_cancel:
                 navigateBack();
                 return true;

@@ -2,3 +2,9 @@
 Antalet skrivs ut på färger i diagram
 4.0.2.0 
 Lekar kan sorteras på format
+4.1.0.14
+Layout och flöde synkroniserat med WP
+4.1.0.28
+Enkel lifetracker för två spelare
+4.1.1.5
+Version angivet i feedbackmail
