@@ -39,7 +39,7 @@ public class AddGameFragment extends Fragment {
     //Version 4.0 private Button bAddGame; //Version 2.1
     private RadioButton cbWin, cbLoss; //Version 2.1
     private int deckID;
-    private CheckBox cbBlack, cbWhite, cbRed, cbBlue, cbGreen;
+    private CheckBox cbBlack, cbWhite, cbRed, cbBlue, cbGreen, cbDevoid;
     private EditText etComment;
     //Version 4.0 private TextView tvTitle;
     private Spinner spOpponent;
@@ -70,6 +70,7 @@ public class AddGameFragment extends Fragment {
         cbRed = (CheckBox)v.findViewById(R.id.cbRed);
         cbBlue = (CheckBox)v.findViewById(R.id.cbBlue);
         cbGreen = (CheckBox)v.findViewById(R.id.cbGreen);
+        cbDevoid = (CheckBox)v.findViewById(R.id.cbDevoid);//Version 4.2
 
         etComment = (EditText)v.findViewById(R.id.etComment);
 
@@ -138,6 +139,7 @@ public class AddGameFragment extends Fragment {
         if (cbRed.isChecked()) { opposingColorset.addColor(ManaColor.RED);}
         if (cbBlue.isChecked()) { opposingColorset.addColor(ManaColor.BLUE);}
         if (cbGreen.isChecked()) { opposingColorset.addColor(ManaColor.GREEN);}
+        if (cbDevoid.isChecked()) { opposingColorset.addColor(ManaColor.DEVOID);}
 
         String comment = etComment.getText().toString();
 

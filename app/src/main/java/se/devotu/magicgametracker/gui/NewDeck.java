@@ -28,7 +28,7 @@ public class NewDeck extends Activity {
     private Button bNewDeck;
     private EditText etName, etTheme;
     private Spinner ddFormat;
-    private CheckBox cbBlack, cbWhite, cbRed, cbBlue, cbGreen;
+    private CheckBox cbBlack, cbWhite, cbRed, cbBlue, cbGreen, cbDevoid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,12 +110,14 @@ public class NewDeck extends Activity {
         cbRed = (CheckBox)findViewById(R.id.cbRed);
         cbBlue = (CheckBox)findViewById(R.id.cbBlue);
         cbGreen = (CheckBox)findViewById(R.id.cbGreen);
+        cbDevoid = (CheckBox)findViewById(R.id.cbDevoid);
         Colorset colorset = new Colorset();
         if (cbBlack.isChecked()) { colorset.addColor(ManaColor.BLACK);}
         if (cbWhite.isChecked()) { colorset.addColor(ManaColor.WHITE);}
         if (cbRed.isChecked()) { colorset.addColor(ManaColor.RED);}
         if (cbBlue.isChecked()) { colorset.addColor(ManaColor.BLUE);}
         if (cbGreen.isChecked()) { colorset.addColor(ManaColor.GREEN);}
+        if (cbDevoid.isChecked()) {colorset.addColor(ManaColor.DEVOID);}
 
         if (colorset.getNumberOfColors() == 0) {
             colorset.addColor(ManaColor.NONE);

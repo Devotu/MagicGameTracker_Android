@@ -36,7 +36,7 @@ public class AddGame extends Activity {
     private Button bAddGame; //Version 2.1
     private RadioButton cbWin, cbLoss; //Version 2.1
     private int deckID;
-    private CheckBox cbBlack, cbWhite, cbRed, cbBlue, cbGreen;
+    private CheckBox cbBlack, cbWhite, cbRed, cbBlue, cbGreen, cbDevoid;
     private EditText etComment;
     private TextView tvTitle;
     private Spinner spOpponent;
@@ -136,12 +136,14 @@ public class AddGame extends Activity {
         cbRed = (CheckBox)findViewById(R.id.cbRed);
         cbBlue = (CheckBox)findViewById(R.id.cbBlue);
         cbGreen = (CheckBox)findViewById(R.id.cbGreen);
+        cbDevoid = (CheckBox)findViewById(R.id.cbDevoid);
         Colorset opposingColorset = new Colorset();
         if (cbBlack.isChecked()) { opposingColorset.addColor(ManaColor.BLACK);}
         if (cbWhite.isChecked()) { opposingColorset.addColor(ManaColor.WHITE);}
         if (cbRed.isChecked()) { opposingColorset.addColor(ManaColor.RED);}
         if (cbBlue.isChecked()) { opposingColorset.addColor(ManaColor.BLUE);}
         if (cbGreen.isChecked()) { opposingColorset.addColor(ManaColor.GREEN);}
+        if (cbDevoid.isChecked()) { opposingColorset.addColor(ManaColor.DEVOID);}
 
         etComment = (EditText)findViewById(R.id.etComment);
         String comment = etComment.getText().toString();

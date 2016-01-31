@@ -111,28 +111,4 @@ public class PlayerStatisticsFragment extends Fragment {
             grColorBars.drawGraph(stats.getColorValueCollection());
         }
     }
-
-    private void setMostCommonManaSymbol(ManaColor mostCommonColor, ImageView img){
-
-        switch (mostCommonColor) {
-            case BLACK:
-                img.setImageResource(R.drawable.black_mana_big);
-                break;
-            case WHITE:
-                img.setImageResource(R.drawable.white_mana_big);
-                break;
-            case RED:
-                img.setImageResource(R.drawable.red_mana_big);
-                break;
-            case BLUE:
-                img.setImageResource(R.drawable.blue_mana_big);
-                break;
-            case GREEN:
-                img.setImageResource(R.drawable.green_mana_big);
-                break;
-            case NONE:
-                img.setImageResource(android.R.color.transparent);
-                break;
-        }
-    }
 }

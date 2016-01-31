@@ -22,7 +22,7 @@ import se.devotu.magicgametracker.info.DeckInfo;
 public class DeckDetailsFragment extends Fragment {
 
     private TextView tvTitle, tvTheme, tvFormat, tvActive;
-    private ImageView imgBlack, imgWhite, imgRed, imgGreen, imgBlue; //Version 3.6
+    private ImageView imgBlack, imgWhite, imgRed, imgGreen, imgBlue, imgDevoid;
     private int deckID;
 
     @Override
@@ -58,7 +58,8 @@ public class DeckDetailsFragment extends Fragment {
         imgRed = (ImageView)v.findViewById(R.id.imgRed);
         imgGreen = (ImageView)v.findViewById(R.id.imgGreen);
         imgBlue = (ImageView)v.findViewById(R.id.imgBlue);
-        activateColors(deck.getColorset(), imgBlack, imgWhite, imgRed, imgBlue, imgGreen);
+        imgDevoid = (ImageView)v.findViewById((R.id.imgDevoid)); //Version 4.2
+        activateColors(deck.getColorset(), imgBlack, imgWhite, imgRed, imgBlue, imgGreen, imgDevoid);
 
         return v;
     }
@@ -70,7 +71,7 @@ public class DeckDetailsFragment extends Fragment {
     }
 
     //Version 3.6
-    private void activateColors(Colorset colorset, ImageView ivBlack, ImageView ivWhite, ImageView ivRed, ImageView ivBlue, ImageView ivGreen){
+    private void activateColors(Colorset colorset, ImageView ivBlack, ImageView ivWhite, ImageView ivRed, ImageView ivBlue, ImageView ivGreen, ImageView ivDevoid){
 
         for (ManaColor color : colorset.getColors()){
 
@@ -89,6 +90,9 @@ public class DeckDetailsFragment extends Fragment {
                     break;
                 case GREEN:
                     ivGreen.setImageResource(R.drawable.green_mana_big);
+                    break;
+                case DEVOID:
+                    ivDevoid.setImageResource(R.drawable.devoid_mana_big);
                     break;
                 case NONE:
                     break;

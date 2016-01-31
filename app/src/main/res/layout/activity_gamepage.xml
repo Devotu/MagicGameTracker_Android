@@ -78,6 +78,12 @@
                 android:layout_column="3"
                 android:src="@drawable/blue_mana_big_bw"
                 style="@style/ManaSymbol.Indicator"/>
+
+            <ImageView
+                android:id="@+id/imgDevoid"
+                android:layout_column="5"
+                android:src="@drawable/devoid_mana_big_bw"
+                style="@style/ManaSymbol.Indicator"/>
         </TableRow>
     </TableLayout>
 

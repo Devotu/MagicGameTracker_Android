@@ -38,8 +38,14 @@ public class PaintFetcher {
             case GREEN:
                 paint.setColor(Color.GREEN);
                 break;
-            default:
+            case DEVOID:
                 paint.setColor(Color.GRAY);
+                break;
+            case NONE:
+                paint.setColor(Color.LTGRAY);
+                break;
+            default:
+                paint.setColor(Color.DKGRAY);
                 break;
         }
 

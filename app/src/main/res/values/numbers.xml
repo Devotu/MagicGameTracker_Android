@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Constant numbers -->
+    <integer name="number_of_colors_original">5</integer>
+    <integer name="number_of_colors_incl_devoid">6</integer>
+    <integer name="number_of_colors_incl_devoidandcolorless">7</integer>
+</resources>
