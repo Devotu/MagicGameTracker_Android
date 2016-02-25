@@ -289,6 +289,9 @@ public class StatisticsCalculator {
                     case GREEN:
                         cvc.addOneToColor(ManaColor.GREEN);
                         break;
+                    case DEVOID:
+                        cvc.addOneToColor(ManaColor.DEVOID);
+                        break;
                     case NONE:
                         cvc.addOneToColor(ManaColor.NONE);
                         break;
@@ -381,6 +384,12 @@ public class StatisticsCalculator {
                         break;
                     case GREEN:
                         cvc.addOneToColor(ManaColor.GREEN);
+                        break;
+                    case DEVOID:
+                        cvc.addOneToColor(ManaColor.DEVOID);
+                        break;
+                    case NONE:
+                        cvc.addOneToColor(ManaColor.NONE);
                         break;
                     default:
                         break;

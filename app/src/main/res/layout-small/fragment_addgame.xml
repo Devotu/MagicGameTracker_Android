@@ -5,105 +5,113 @@
     <RelativeLayout
         style="@style/ContentHolder">
 
-    <TextView
-        android:id="@+id/tvChooseOpponentTitle"
-        android:layout_alignParentTop="true"
-        android:text="@string/opponent"
-        style="@style/Text.Title" />
+        <TextView
+            android:id="@+id/tvChooseOpponentTitle"
+            android:layout_alignParentTop="true"
+            android:text="@string/opponent"
+            style="@style/Text.Title" />
 
-    <Spinner
-        android:id="@+id/ddOpponent"
-        android:layout_below="@+id/tvChooseOpponentTitle"
-        style="@style/DropDown"
-        android:layout_height="40dp"
-        android:layout_marginTop="@dimen/space_vertical"/>
+        <Spinner
+            android:id="@+id/ddOpponent"
+            android:layout_below="@+id/tvChooseOpponentTitle"
+            style="@style/DropDown"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/space_vertical"/>
 
-    <TextView
-        android:id="@+id/tvColorsTitle"
-        android:layout_below="@+id/ddOpponent"
-        android:text="@string/opponentcolors"
-        style="@style/Text.Title" />
+        <TextView
+            android:id="@+id/tvColorsTitle"
+            android:layout_below="@+id/ddOpponent"
+            android:text="@string/opponentcolors"
+            style="@style/Text.Title" />
 
-    <TableLayout
-        android:id="@+id/tbManaColors"
-        android:layout_below="@+id/tvColorsTitle"
-        android:layout_centerHorizontal="true"
-        style="@style/Table">
+        <TableLayout
+            android:id="@+id/tbManaColors"
+            android:layout_below="@+id/tvColorsTitle"
+            android:layout_centerHorizontal="true"
+            style="@style/Table">
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            style="@style/TableRow">
+            <TableRow
+                android:id="@+id/tableRow1"
+                style="@style/TableRow">
 
-            <CheckBox
-                android:id="@+id/cbBlack"
-                android:layout_column="0"
-                android:background="@drawable/cbbigblack"
-                android:button="@null"
-                style="@style/ManaSymbol.Checkbox" />
+                <CheckBox
+                    android:id="@+id/cbBlack"
+                    android:layout_column="0"
+                    android:background="@drawable/cbbigblack"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
 
-            <CheckBox
-                android:id="@+id/cbWhite"
-                android:layout_column="1"
-                android:background="@drawable/cbbigwhite"
-                android:button="@null"
-                style="@style/ManaSymbol.Checkbox" />
+                <CheckBox
+                    android:id="@+id/cbWhite"
+                    android:layout_column="1"
+                    android:background="@drawable/cbbigwhite"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
 
-            <CheckBox
-                android:id="@+id/cbRed"
-                android:layout_column="2"
-                android:background="@drawable/cbbigred"
-                android:button="@null"
-                style="@style/ManaSymbol.Checkbox" />
+                <CheckBox
+                    android:id="@+id/cbRed"
+                    android:layout_column="2"
+                    android:background="@drawable/cbbigred"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
 
-            <CheckBox
-                android:id="@+id/cbBlue"
-                android:layout_column="3"
-                android:background="@drawable/cbbigblue"
-                android:button="@null"
-                style="@style/ManaSymbol.Checkbox" />
+                <CheckBox
+                    android:id="@+id/cbBlue"
+                    android:layout_column="3"
+                    android:background="@drawable/cbbigblue"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
 
-            <CheckBox
-                android:id="@+id/cbGreen"
-                android:layout_column="4"
-                android:background="@drawable/cbbiggreen"
-                android:button="@null"
-                style="@style/ManaSymbol.Checkbox" />
-        </TableRow>
-    </TableLayout>
+                <CheckBox
+                    android:id="@+id/cbGreen"
+                    android:layout_column="4"
+                    android:background="@drawable/cbbiggreen"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
 
-    <TextView
-        android:id="@+id/tvCommentTitle"
-        android:layout_below="@+id/tbManaColors"
-        android:text="@string/comment"
-        style="@style/Text.Title" />
+                <CheckBox
+                    android:id="@+id/cbDevoid"
+                    android:layout_column="5"
+                    android:background="@drawable/cbbigdevoid"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+            </TableRow>
+        </TableLayout>
 
-    <EditText
-        android:id="@+id/etComment"
-        android:layout_below="@+id/tvCommentTitle"
-        android:hint="@string/comment"
-        style="@style/Text.TextInput.MultiLineInput"
-        android:layout_height="50dp">
-    </EditText>
+        <TextView
+            android:id="@+id/tvCommentTitle"
+            android:layout_below="@+id/tbManaColors"
+            android:text="@string/comment"
+            style="@style/Text.Title" />
 
-    <TextView
-        android:id="@+id/tvPerformanceRatingTitle"
-        android:layout_below="@+id/etComment"
-        android:text="@string/performanceRating"
-        style="@style/Text.Title" />
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_below="@+id/tvCommentTitle"
+            android:hint="@string/comment"
+            style="@style/Text.TextInput.MultiLineInput"
+            android:layout_height="50dp">
 
-    <RatingBar
-        android:id="@+id/rbarGamePerformanceRating"
-        android:layout_below="@+id/tvPerformanceRatingTitle"
-        style="@style/RatingBar"
-        android:rating="2.5"/>
+        </EditText>
 
-    <TextView
-        android:id="@+id/tvResultTitle"
-        android:layout_below="@+id/rbarGamePerformanceRating"
-        android:text="@string/result"
-        style="@style/Text.Title"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/space_vertical" />
+        <TextView
+            android:id="@+id/tvPerformanceRatingTitle"
+            android:layout_below="@+id/etComment"
+            android:text="@string/performanceRating"
+            style="@style/Text.Title" />
+
+        <RatingBar
+            android:id="@+id/rbarGamePerformanceRating"
+            android:layout_below="@+id/tvPerformanceRatingTitle"
+            style="@style/RatingBar"
+            android:rating="2.5"/>
+
+        <TextView
+            android:id="@+id/tvResultTitle"
+            android:layout_below="@+id/rbarGamePerformanceRating"
+            android:text="@string/result"
+            style="@style/Text.Title"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/space_vertical" />
 
         <RadioGroup
             android:id="@+id/rgWinLoss"
@@ -124,5 +132,5 @@
 
         </RadioGroup>
 
-        </RelativeLayout>
+    </RelativeLayout>
 </RelativeLayout>

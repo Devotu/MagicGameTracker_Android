@@ -17,6 +17,7 @@ public class ColorValueCollection {
         this.colorValues.add(new ColorValue(ManaColor.RED, 0));
         this.colorValues.add(new ColorValue(ManaColor.BLUE, 0));
         this.colorValues.add(new ColorValue(ManaColor.GREEN, 0));
+        this.colorValues.add(new ColorValue(ManaColor.DEVOID, 0));
         this.colorValues.add(new ColorValue(ManaColor.NONE, 0));
     }
 

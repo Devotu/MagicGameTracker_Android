@@ -50,6 +50,8 @@ public class SQLiteColorsetCodex {
                 colorset.addColor(ManaColor.GREEN);
             } else if (color[i].equals("NONE")) {
                 colorset.addColor(ManaColor.NONE);
+            } else if (color[i].equals("DEVOID")){
+                colorset.addColor(ManaColor.DEVOID);
             }
         }
 

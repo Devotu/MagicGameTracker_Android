@@ -50,6 +50,7 @@ public class ColorBarsFragment extends Fragment {
         int textH = (int)getActivity().getResources().getDimension(R.dimen.component_text_graph);
         int marginWH = (int)getActivity().getResources().getDimension(R.dimen.margin_square);
         int dpAdjustment = (int)getActivity().getResources().getDimension(R.dimen.adjustment_coeficient);
+        int numberOfColors = (int)getActivity().getResources().getInteger(R.integer.number_of_colors_incl_devoidandcolorless);
 
         Bitmap bg = Bitmap.createBitmap(totalW, totalH, Bitmap.Config.RGB_565);
         Canvas canvas = new Canvas(bg);
@@ -82,9 +83,9 @@ public class ColorBarsFragment extends Fragment {
         for (ColorValue cv : colorValues) {
             //Stapel
             float xL, yB, xR, yT;
-            xL = i*((float)displayW/(float)5) + descriptionW + marginWH; i++;
+            xL = i*((float)displayW/(float)numberOfColors) + descriptionW + marginWH; i++;
             yB = displayH;
-            xR = i*((float)displayW/(float)5) + descriptionW - marginWH;
+            xR = i*((float)displayW/(float)numberOfColors) + descriptionW - marginWH;
             yT = displayH - ((displayH - marginWH) * ((float)cv.getValue()/(float)maxValue));
             Paint barPaint = paintFetcher.getPaintByManaColor(cv.getColor());
             canvas.drawRect(xL,yT,xR,yB,barPaint);

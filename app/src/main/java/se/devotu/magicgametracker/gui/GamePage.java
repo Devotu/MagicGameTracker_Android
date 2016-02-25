@@ -29,7 +29,7 @@ public class GamePage extends Activity {
     private int gameID;
     private GameInfo gameInfo;
     private TextView tvResult, tvOpponent, tvComment;
-    private ImageView imgBlack, imgWhite, imgRed, imgGreen, imgBlue;
+    private ImageView imgBlack, imgWhite, imgRed, imgGreen, imgBlue, imgDevoid;
     private RatingBar rbarPerformanceRating;
 
     @Override
@@ -57,7 +57,8 @@ public class GamePage extends Activity {
         imgRed = (ImageView)findViewById(R.id.imgRed);
         imgGreen = (ImageView)findViewById(R.id.imgGreen);
         imgBlue = (ImageView)findViewById(R.id.imgBlue);
-        activateColors(gameInfo.getOpposingColorset(), imgBlack, imgWhite, imgRed, imgBlue, imgGreen);
+        imgDevoid = (ImageView)findViewById(R.id.imgDevoid);
+        activateColors(gameInfo.getOpposingColorset(), imgBlack, imgWhite, imgRed, imgBlue, imgGreen, imgDevoid);
 
         tvComment = (TextView)findViewById(R.id.tvComment);
         tvComment.setText(gameInfo.getComment());
@@ -113,7 +114,7 @@ public class GamePage extends Activity {
         }
     }
 
-    private void activateColors(Colorset colorset, ImageView ivBlack, ImageView ivWhite, ImageView ivRed, ImageView ivBlue, ImageView ivGreen){
+    private void activateColors(Colorset colorset, ImageView ivBlack, ImageView ivWhite, ImageView ivRed, ImageView ivBlue, ImageView ivGreen, ImageView ivDevoid){
 
         for (ManaColor color : colorset.getColors()){
 
@@ -132,6 +133,9 @@ public class GamePage extends Activity {
                     break;
                 case GREEN:
                     ivGreen.setImageResource(R.drawable.green_mana_big);
+                    break;
+                case DEVOID:
+                    ivDevoid.setImageResource(R.drawable.devoid_mana_big);
                     break;
                 case NONE:
                     break;

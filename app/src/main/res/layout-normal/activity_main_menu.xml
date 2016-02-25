@@ -28,5 +28,22 @@
         android:layout_below="@+id/bToPlayerPage"
         style="@style/Button"/>
 
-        </RelativeLayout>
+    <TextView
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:text="@string/changestitle"
+        android:id="@+id/tvChangesTitle"
+        android:layout_below="@+id/bToOpponents"
+        style="@style/Text.Compact.Title"
+        android:paddingTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:text="@string/changes"
+        android:id="@+id/tvChanges"
+        android:layout_below="@+id/tvChangesTitle"
+        style="@style/Text.Compact.Title"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
 </RelativeLayout>

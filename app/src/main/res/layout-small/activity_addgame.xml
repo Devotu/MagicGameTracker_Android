@@ -68,6 +68,13 @@
                 android:background="@drawable/cbbiggreen"
                 android:button="@null"
                 style="@style/ManaSymbol.Checkbox" />
+
+            <CheckBox
+                android:id="@+id/cbDevoid"
+                android:layout_column="5"
+                android:background="@drawable/cbbigdevoid"
+                android:button="@null"
+                style="@style/ManaSymbol.Checkbox" />
         </TableRow>
     </TableLayout>
 
