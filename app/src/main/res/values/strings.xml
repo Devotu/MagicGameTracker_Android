@@ -101,6 +101,8 @@
     <string name="minus1">-1</string>
     <string name="plus5">+5</string>
     <string name="minus5">-5</string>
+    <string name="changestitle">Recent changes</string>
+    <string name="changes">Devoid color available. Decks with no given color are Colorless.</string>
 
     <!--Sentences-->
     <string name="importwarning">This action will delete your current database, are you sure you want to proceed?</string>

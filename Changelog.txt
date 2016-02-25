@@ -8,3 +8,7 @@ Layout och flöde synkroniserat med WP
 Enkel lifetracker för två spelare
 4.1.1.5
 Version angivet i feedbackmail
+4.2.0.2
+Devoid och Colorless finns som färg
+4.2.0.3
+Inforuta på main
