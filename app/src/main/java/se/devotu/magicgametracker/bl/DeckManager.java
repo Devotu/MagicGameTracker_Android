@@ -95,12 +95,6 @@ public class DeckManager {
     }
 
     /*
-    public void updateDeck(int deckID){
-        DeckRecordManager deckManagerDB = new DeckRecordManager(context);
-        deckManagerDB.updateDeck(deckID);
-    }*/
-
-    /*
     //Flyttat till AlterationManager
     public void AddAlteration(int deckID, String comment) {
         DeckRecordManager deckManagerDB = new DeckRecordManager(context);
