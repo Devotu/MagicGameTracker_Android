@@ -90,6 +90,10 @@ public class DeckManager {
         }
     }
 
+    public void updateDeck(Deck newDeck) {
+        drm.updateDeck(newDeck);
+    }
+
     /*
     public void updateDeck(int deckID){
         DeckRecordManager deckManagerDB = new DeckRecordManager(context);

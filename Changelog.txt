@@ -12,3 +12,13 @@ Version angivet i feedbackmail
 Devoid och Colorless finns som färg
 4.2.0.3
 Inforuta på main
+4.3.0.0
+Full Alteration finns
+4.3.0.1
+Comment på full alteration
+4.3.0.2
+comment på full alteration korrekt
+4.3.0.3
+Reload Deck details
+4.3.0.4
+Uppdaterad inforuta Main

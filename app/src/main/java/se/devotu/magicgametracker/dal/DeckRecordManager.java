@@ -12,6 +12,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
 
 /**
  * Created by Devotu on 2015-01-20.
@@ -135,34 +136,37 @@ public class DeckRecordManager extends DatabaseManager {
     }
 
     public void deleteDeck(int deckID) {
-
-
         SQLiteDatabase db = this.getReadableDatabase();
         db.delete("Decks", "Deck_ID = " + deckID, null);
         db.close();
     }
 
-    //Version 3.0 Depricated
-    public void updateDeck(int deckID){
-        SQLiteDatabase db = this.getReadableDatabase();
+    public void updateDeck(Deck newDeck){
+        ContentValues newDeckValues = new ContentValues();
+        SQLiteDatabase db = this.getWritableDatabase();
 
-        String sql = "SELECT Version FROM Decks WHERE Deck_ID = " + deckID;
-        Cursor cursor = db.rawQuery(sql, null);
-        cursor.moveToFirst();
-
-        int newVersion = cursor.getInt(0) +1;
-
+        SQLiteColorsetCodex colorsetCodex = new SQLiteColorsetCodex();
         SettingsManager sm = new SettingsManager();
         String dateFormat = sm.getDateFormat(context);
         SimpleDateFormat df = new SimpleDateFormat(dateFormat);
         Calendar c = Calendar.getInstance();
         String date = df.format(c.getTime());
 
-        ContentValues values = new ContentValues();
-        values.put("Version", newVersion);
-        values.put("DateAltered", date);
+        //newDeckValues.put("Deck_ID", newDeck.getDeck_ID());
+        newDeckValues.put("Name", newDeck.getName());
+        newDeckValues.put("Format", newDeck.getFormat());
+        newDeckValues.put("Colorset", colorsetCodex.parseColorset(newDeck.getColorset()));
+        newDeckValues.put("Theme", newDeck.getTheme());
+        newDeckValues.put("Active", newDeck.getActive());
+        //newDeckValues.put("DateAltered", date);
 
-        db.update("Decks", values, "Deck_ID = " + deckID, null);
+        try {
+            db.update("Decks", newDeckValues, "Deck_ID = " + newDeck.getDeck_ID(), null);
+        } catch (SQLiteException ex){
+            String exeption = ex.getMessage();
+        }
+
+        db.close();
     }
 
 

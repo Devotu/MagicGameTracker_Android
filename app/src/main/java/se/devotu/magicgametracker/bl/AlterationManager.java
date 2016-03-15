@@ -1,6 +1,7 @@
 package se.devotu.magicgametracker.bl;
 
 import android.content.Context;
+import android.widget.EditText;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,7 +9,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import se.devotu.magicgametracker.dal.AlterationRecordManager;
+import se.devotu.magicgametracker.enums.ManaColor;
 import se.devotu.magicgametracker.info.Alteration;
+import se.devotu.magicgametracker.info.Deck;
 
 /**
  * Created by Otto on 2015-01-20.
@@ -64,5 +67,53 @@ public class AlterationManager {
         Alteration lastAlteration;
         lastAlteration = arm.getLastAlterationForDeck(deckID);
         return lastAlteration.getDate();
+    }
+
+    public void addNewFullAlteration(Deck originalDeck, Deck newDeck, String comment) {
+        String fullComment = "";
+
+        //Name
+        if (!newDeck.getName().equals(originalDeck.getName())){
+            fullComment = fullComment + "Name changed from " + originalDeck.getName() + " to " + newDeck.getName() + ". ";
+        }
+
+        //Format
+        if (!newDeck.getFormat().equals(originalDeck.getFormat())){
+            fullComment = fullComment + "Format changed from " + originalDeck.getFormat() + " to " + newDeck.getFormat() + ". ";
+        }
+
+        //Color
+        if (!newDeck.getColorset().getColors().equals(originalDeck.getColorset().getColors())){
+            String colorChange = "Colors changed from ";
+
+            for (ManaColor mc : originalDeck.getColorset().getColors()) {
+                 colorChange = colorChange + mc.toString() + ", ";
+            }
+            colorChange = colorChange.substring(0, colorChange.length()-2);
+
+            colorChange = colorChange + " to ";
+
+            for (ManaColor mc : newDeck.getColorset().getColors()) {
+                colorChange = colorChange + mc.toString() + ", ";
+            }
+            colorChange = colorChange.substring(0, colorChange.length()-2);
+
+            fullComment = fullComment + colorChange + ". ";
+        }
+
+        //Theme
+        if (!newDeck.getTheme().equals(originalDeck.getTheme())){
+            fullComment = fullComment + "Theme changed from " + originalDeck.getTheme() + " to " + newDeck.getTheme() + ". ";
+        }
+
+        //Comment
+        if (!comment.equals("")){
+            fullComment = fullComment + "Comment: " + comment;
+        }
+
+        arm.addAlteration(originalDeck.getDeck_ID(), fullComment);
+
+        DeckManager dm = new DeckManager(context);
+        dm.updateDeck(newDeck);
     }
 }

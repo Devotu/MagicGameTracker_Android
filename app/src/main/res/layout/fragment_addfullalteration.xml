@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/RootLayout">
+
+    <RelativeLayout
+        style="@style/ContentHolder">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:text="@string/name"
+            style="@style/Text.Title"
+            android:id="@+id/tvNameTitle" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_below="@+id/tvNameTitle"
+            style="@style/Text.TextInput.SingleLineInput"
+            android:hint="@string/hint_Name"/>
+
+        <TextView
+            android:layout_below="@+id/etName"
+            android:text="@string/format"
+            style="@style/Text.Title"
+            android:id="@+id/tvFormatTitle" />
+
+        <Spinner
+            android:id="@+id/ddFormat"
+            android:layout_below="@+id/tvFormatTitle"
+            style="@style/DropDown" />
+
+        <TextView
+            android:layout_below="@+id/ddFormat"
+            android:text="@string/colors"
+            style="@style/Text.Title"
+            android:id="@+id/tvColorsTitle" />
+
+        <TableLayout
+            android:id="@+id/tbManaColors"
+            android:layout_below="@+id/tvColorsTitle"
+            style="@style/Table">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                style="@style/TableRow">
+
+                <CheckBox
+                    android:id="@+id/cbBlack"
+                    android:layout_column="0"
+                    android:background="@drawable/cbbigblack"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+
+                <CheckBox
+                    android:id="@+id/cbWhite"
+                    android:layout_column="1"
+                    android:background="@drawable/cbbigwhite"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+
+                <CheckBox
+                    android:id="@+id/cbRed"
+                    android:layout_column="2"
+                    android:background="@drawable/cbbigred"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+
+                <CheckBox
+                    android:id="@+id/cbBlue"
+                    android:layout_column="3"
+                    android:background="@drawable/cbbigblue"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+
+                <CheckBox
+                    android:id="@+id/cbGreen"
+                    android:layout_column="4"
+                    android:background="@drawable/cbbiggreen"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+
+                <CheckBox
+                    android:id="@+id/cbDevoid"
+                    android:layout_column="5"
+                    android:background="@drawable/cbbigdevoid"
+                    android:button="@null"
+                    style="@style/ManaSymbol.Checkbox" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:layout_below="@+id/tbManaColors"
+            android:text="@string/theme"
+            style="@style/Text.Title"
+            android:id="@+id/tvThemeTitle" />
+
+        <EditText
+            android:layout_below="@+id/tvThemeTitle"
+            android:id="@+id/etTheme"
+            style="@style/Text.TextInput.MultiLineInput"
+            android:hint="@string/hint_Theme"/>
+
+        <TextView
+            android:id="@+id/tvCommentTitle"
+            android:layout_below="@+id/etTheme"
+            android:text="@string/comment"
+            style="@style/Text.Title" />
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_below="@+id/tvCommentTitle"
+            android:hint="@string/hintComment"
+            style="@style/Text.TextInput.MultiLineInput">
+            <requestFocus android:layout_width="wrap_content" />
+
+        </EditText>
+
+    </RelativeLayout>
+</RelativeLayout>
