@@ -62,7 +62,7 @@ public class DeckSwipePage extends FragmentActivity{
                 startActivity(intent);
                 return true;
             case R.id.action_addalteration:
-                intent = new Intent(DeckSwipePage.this, AddAlteration.class);
+                intent = new Intent(DeckSwipePage.this, AddAlterationSwipePage.class);
                 intent.putExtra("Deck_ID", deckID);
                 startActivity(intent);
                 return true;

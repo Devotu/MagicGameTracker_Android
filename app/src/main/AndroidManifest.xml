@@ -59,10 +59,16 @@
             android:name=".gui.DeckList">
         </activity>
         -->
-        <!-- Version 3.0 -->
+        <!-- Version 4.3
         <activity
             android:name="se.devotu.magicgametracker.gui.AddAlteration">
         </activity>
+        -->
+        <!-- Version 4.3 -->
+        <activity
+            android:name="se.devotu.magicgametracker.gui.AddAlterationSwipePage">
+        </activity>
+        <!-- Version 3.0 -->
         <activity
             android:name="se.devotu.magicgametracker.gui.DeckSwipePage">
         </activity>

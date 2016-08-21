@@ -33,24 +33,13 @@ public class DeckDetailsFragment extends Fragment {
         Intent passedIntent = getActivity().getIntent();
         deckID = passedIntent.getIntExtra("Deck_ID", -1);
 
-        DeckManager deckManager = new DeckManager(getActivity());
-        DeckInfo deck = deckManager.getDeckInfo(deckID);
-
         tvTitle = (TextView)v.findViewById(R.id.tvDeckName);
-        tvTitle.setText(deck.getName());
 
         tvActive = (TextView)v.findViewById(R.id.tvActive);
-        if (deck.getActive() == 1){
-            tvActive.setText(getString(R.string.active));
-        } else {
-            tvActive.setText(getString(R.string.inactive));
-        }
 
         tvFormat = (TextView)v.findViewById(R.id.tvFormat);
-        tvFormat.setText(deck.getFormat());
 
         tvTheme = (TextView)v.findViewById(R.id.tvTheme);
-        tvTheme.setText(deck.getTheme());
 
         //Version 3.6
         imgBlack = (ImageView)v.findViewById(R.id.imgBlack);
@@ -59,7 +48,8 @@ public class DeckDetailsFragment extends Fragment {
         imgGreen = (ImageView)v.findViewById(R.id.imgGreen);
         imgBlue = (ImageView)v.findViewById(R.id.imgBlue);
         imgDevoid = (ImageView)v.findViewById((R.id.imgDevoid)); //Version 4.2
-        activateColors(deck.getColorset(), imgBlack, imgWhite, imgRed, imgBlue, imgGreen, imgDevoid);
+
+        updateDetails();
 
         return v;
     }
@@ -68,6 +58,12 @@ public class DeckDetailsFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updateDetails();
     }
 
     //Version 3.6
@@ -101,5 +97,24 @@ public class DeckDetailsFragment extends Fragment {
             }
 
         }
+    }
+
+    private void updateDetails(){
+        DeckManager deckManager = new DeckManager(getActivity());
+        DeckInfo deck = deckManager.getDeckInfo(deckID);
+
+        tvTitle.setText(deck.getName());
+
+        if (deck.getActive() == 1){
+            tvActive.setText(getString(R.string.active));
+        } else {
+            tvActive.setText(getString(R.string.inactive));
+        }
+
+        tvFormat.setText(deck.getFormat());
+
+        tvTheme.setText(deck.getTheme());
+
+        activateColors(deck.getColorset(), imgBlack, imgWhite, imgRed, imgBlue, imgGreen, imgDevoid);
     }
 }

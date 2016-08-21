@@ -12,6 +12,7 @@ import java.util.Calendar;
 
 import se.devotu.magicgametracker.bl.SettingsManager;
 import se.devotu.magicgametracker.info.Alteration;
+import se.devotu.magicgametracker.info.Deck;
 
 
 /**
