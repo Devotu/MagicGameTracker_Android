@@ -8,8 +8,8 @@ android {
         applicationId "se.devotu.magicgametracker"
         minSdkVersion 16
         targetSdkVersion 21
-        versionCode 9
-        versionName "4.3.1.0"
+        versionCode 10
+        versionName "4.3.1.1"
     }
     buildTypes {
         release {

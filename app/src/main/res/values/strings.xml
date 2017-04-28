@@ -102,7 +102,7 @@
     <string name="plus5">+5</string>
     <string name="minus5">-5</string>
     <string name="changestitle">Recent changes</string>
-    <string name="changes">Upon popular request Deck edit is now available!</string>
+    <string name="changes">Magic Game Tracker is in development as a web service. More info at Magirator.net</string>
 
     <!--Sentences-->
     <string name="importwarning">This action will delete your current database, are you sure you want to proceed?</string>
